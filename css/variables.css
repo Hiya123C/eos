@@ -1,0 +1,43 @@
+:root {
+  --bg:            #34343C;
+  --bg-light:      #FFDABE;
+  --text-accent:   #FFC192;
+  --text-light:    #FFE9D4;
+  --text-muted:    rgba(255, 233, 212, 0.6);
+
+  --nav-from:      #2A2435;
+  --nav-to:        #242635;
+
+  --card-bg:       rgba(255, 255, 255, 0.04);
+  --card-border:   rgba(255, 193, 146, 0.25);
+
+  --font-display:  'Opicifio', 'Georgia', serif;
+  --font-heading:  'Theaderce', 'Courier New', monospace;
+
+  --section-px:    clamp(1.5rem, 5vw, 6rem);
+  --section-py:    clamp(3rem, 8vw, 7rem);
+  --gap-sm:        0.75rem;
+  --gap-md:        1.5rem;
+  --gap-lg:        3rem;
+
+  --ease-out-expo:   cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-fast: 0.2s var(--ease-out-expo);
+  --transition-med:  0.4s var(--ease-out-expo);
+
+  --radius-sm:     6px;
+  --radius-md:     14px;
+  --radius-pill:   999px;
+}
+
+@font-face {
+  font-family: 'Opicifio';
+  src: url('../assets/fonts/Opicifio-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Theaderce';
+  src: url('../assets/fonts/Theaderce-Regular.woff2') format('woff2');
+  font-weight: 700;
+  font-display: swap;
+}

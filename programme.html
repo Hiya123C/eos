@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EOS</title>
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/header.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/header.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/programme.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+</head>
+<body>
+
+  <nav id="navbar">
+    <img src="assets/EOS.svg" alt="EOS logo" class="nav-logo" data-reveal/>
+    <ul class="nav-links">
+      <li><a href="index.html">About</a></li>
+      <li><a href="programme.html">Our Programme</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="header">
+    <div id="glass-canvas-wrapper" aria-hidden="true"></div>
+    <div class="header-glow" aria-hidden="true"></div>
+    <div class="container header-container">
+      <img src="assets/EOS.svg" alt="EOS logo" class="header-logo" />
+      <h1 class="header-title">
+        <span>Tech Exploration</span>
+        <span>Programme</span>
+      </h1>
+      <p class="header-subtitle">For Girls</p>
+      <p class="header-body">
+        Learn to code. Build projects. Meet mentors.<br />Explore tech.
+      </p>
+      <div class="header-cta">
+        <a href="#info-strip" class="btn btn-primary">
+          Sign Up! <span class="material-symbols-outlined">open_in_new</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="info-strip" class="section">
+    <div class="container">
+      <div class="info-strip-grid" data-reveal-group>
+        <div class="card" data-reveal>
+          <h2 class="card-heading">Who can join?</h2>
+          <ul class="bullet-list">
+            <li>Secondary 1–3 girls (ages 13–15), but students from other levels are also welcome to apply</li>
+            <li>No prior coding experience needed</li>
+            <li>Curious about technology or wanting to try something new</li>
+            <li>Interested in working on fun team projects</li>
+          </ul>
+        </div>
+        <div class="card" data-reveal>
+          <h2 class="card-heading">Timeline</h2>
+          <div class="timeline">
+            <div class="timeline-row">
+              <span class="timeline-date">31 May</span>
+              <div>
+                <p class="timeline-label">Applications deadline</p>
+                <p class="timeline-sublabel">Confirmation email will be sent by 5th June</p>
+              </div>
+            </div>
+            <div class="timeline-row">
+              <span class="timeline-date">22–24 June</span>
+              <p class="timeline-label">In-person workshops</p>
+            </div>
+            <div class="timeline-row">
+              <span class="timeline-date">July – Dec</span>
+              <p class="timeline-label">Team project phase</p>
+            </div>
+            <div class="timeline-row">
+              <span class="timeline-date">Dec</span>
+              <p class="timeline-label">Final project showcase</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="programme" class="section">
+    <div class="container">
+      <h2 class="section-heading" data-reveal>Programme Structure</h2>
+      <div class="programme-divider"></div>
+      <div class="programme-cols" data-reveal-group>
+        <div data-reveal>
+          <h3 class="card-heading">June Workshops</h3>
+          <p class="card-body">
+            Kickstart your coding journey with hands-on lessons and fun collaborative
+            activities. You'll learn Python basics and complete a guided mini project.
+          </p>
+        </div>
+        <div data-reveal>
+          <h3 class="card-heading">Project Phase</h3>
+          <p class="card-body">
+            Work in small teams to develop your own project with mentor support.
+            You'll have regular check-ins and optional meetups.
+          </p>
+        </div>
+        <div data-reveal>
+          <h3 class="card-heading">Final Showcase</h3>
+          <p class="card-body">
+            Present your project, celebrate your achievements, and see what others
+            have created.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="details-cta" class="section">
+    <div class="container">
+      <div class="details-cta-grid" data-reveal-group>
+        <div class="card" data-reveal>
+          <h2 class="card-heading">Details</h2>
+          <div class="detail-rows">
+            <div class="detail-row">
+              <span class="tag">Format</span>
+              <span class="detail-value">Hybrid (In-person + Online)</span>
+            </div>
+            <div class="detail-row">
+              <span class="tag">Cost</span>
+              <span class="detail-value">Completely Free!</span>
+            </div>
+            <div class="detail-row">
+              <span class="tag">Cohort Size</span>
+              <span class="detail-value">~50–80 students</span>
+            </div>
+            <div class="detail-row">
+              <span class="tag">Location</span>
+              <span class="detail-value">In-person sessions TBD</span>
+            </div>
+          </div>
+        </div>
+        <div class="card" data-reveal>
+          <h2 class="section-heading">Ready to Explore Computing?</h2>
+          <br />
+          <a href="#" class="btn btn-primary">
+            Sign Up Now! <span class="material-symbols-outlined">open_in_new</span>
+          </a>
+          <br /><br />
+          <p class="card-body" style="font-size: 0.8rem;">
+            Have a question? Contact us at
+            <a href="mailto:eos@example.com" style="color: var(--text-accent);">eos@example.com</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© EOS Initiative 2026</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+
+</body>
+</html>

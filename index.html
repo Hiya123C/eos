@@ -1,18 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <title>EOS</title>
-    <!-- add favicon -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EOS</title>
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/header.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/header.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/index.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
 </head>
 <body>
-    <h1>EOS initiative</h1>
-    <h3>Inspiring girls to code the future</h3>
-    <p>We aim to inspire lower secondary girls to explore computing and empower them with the confidence and skills to pursue future pathways in technology.</p>
 
-<script src="./script.js"></script>
+  <nav id="navbar">
+    <img src="assets/EOS.svg" alt="EOS logo" class="nav-logo" data-reveal/>
+    <ul class="nav-links">
+      <li><a href="index.html">About</a></li>
+      <li><a href="programme.html">Our Programme</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="header">
+    <div id="glass-canvas-wrapper" aria-hidden="true"></div>
+    <div class="header-glow" aria-hidden="true"></div>
+
+    <div class="container header-container">
+      <img src="assets/EOS-initiative.svg" alt="EOS Initiative" class="header-logo" data-reveal/>
+      <p class="header-subtitle">Inspiring girls to code the future</p>
+      <p class="header-body">
+        We aim to inspire lower secondary girls to explore computing
+        and empower them with the confidence and skills to pursue
+        future pathways in technology.
+      </p>
+    </div>
+  </section>
+
+  <section id="vision" class="section">
+    <div class="container">
+      <p class="section-heading" data-reveal>Vision</p>
+      <p class="vision-statement" data-reveal>
+        An inclusive community that empowers girls to thrive in computing.
+      </p>
+    </div>
+  </section>
+
+  <section id="objectives" class="section">
+    <div class="container">
+      <p class="section-heading" data-reveal>Objectives</p>
+      <div class="objectives-divider"></div>
+      <div class="objectives-cols" data-reveal-group>
+        <div data-reveal>
+          <h3 class="obj-col-title">Build Foundations</h3>
+          <p class="obj-col-body">
+            To introduce accessible, hands-on computing fundamentals
+            that support strong early understanding.
+          </p>
+        </div>
+        <div data-reveal>
+          <h3 class="obj-col-title">Inspire Exploration</h3>
+          <p class="obj-col-body">
+            To expose learners to diverse technology pathways and curate
+            resources that encourage curiosity and self-directed learning.
+          </p>
+        </div>
+        <div data-reveal>
+          <h3 class="obj-col-title">Empower</h3>
+          <p class="obj-col-body">
+            To foster confidence and growth through mentored team-based
+            projects that celebrate learning progress and achievement.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="programme-index">
+    <div class="container">
+      <h2 class="section-heading" data-reveal>Programme Structure</h2>
+      <div class="programme-index-divider"></div>
+      <div data-reveal-group>
+        <div class="programme-entry" data-reveal>
+          <p class="programme-entry-title">Foundational Workshops (June)</p>
+          <p class="programme-entry-body">
+            Introductory workshops focused on Python fundamentals, designed to be
+            hands-on and beginner-friendly, to allow participants build confidence,
+            develop interest in computing, and learn in a supportive environment.
+            We conclude with a capstone project, giving participants the opportunity
+            to apply their new skills in a creative and meaningful way.
+          </p>
+        </div>
+        <div class="programme-entry" data-reveal>
+          <p class="programme-entry-title">Project Phase (July–December)</p>
+          <p class="programme-entry-body">
+            Participants then move into a project-based phase where they work in
+            small teams of 3–5 members on guided projects in an area of their choice.
+            Teams may propose their own ideas or select from projects designed by our
+            volunteers. Each team is supported by a dedicated mentor who guides
+            project development.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="team" class="section">
+    <div class="container">
+      <div class="team-inner" data-reveal-group>
+        <div class="team-content" data-reveal>
+          <h2 class="section-heading">About Our Team</h2>
+          <p class="team-body">
+            We are a group of girls from various Junior Colleges across Singapore,
+            united by our shared passion for computing and empowering girls in tech.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© EOS Initiative 2026</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+
 </body>
-
 </html>

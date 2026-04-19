@@ -1,0 +1,67 @@
+.js-ready [data-reveal] {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s var(--ease-out-expo), transform 0.7s var(--ease-out-expo);
+}
+
+
+.js-ready [data-reveal].revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes headerFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.header-badge {
+  animation: headerFadeUp 0.9s var(--ease-out-expo) 0.1s both;
+}
+
+.header-title span:nth-child(1) {
+  animation: headerFadeUp 0.9s var(--ease-out-expo) 0.25s both;
+}
+
+.header-title span:nth-child(2) {
+  animation: headerFadeUp 0.9s var(--ease-out-expo) 0.4s both;
+}
+
+.header-subtitle {
+  animation: headerFadeUp 0.9s var(--ease-out-expo) 0.5s both;
+}
+
+.header-body {
+  animation: headerFadeUp 0.9s var(--ease-out-expo) 0.6s both;
+}
+
+.header-cta {
+  animation: headerFadeUp 0.9s var(--ease-out-expo) 0.72s both;
+}
+
+#navbar {
+  animation: headerFadeUp 0.8s var(--ease-out-expo) 0.05s both;
+}
+
+
+@keyframes bgPulse {
+  0%, 100% { opacity: 0.55; }
+  50%       { opacity: 0.8;  }
+}
+
+.header-glow {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background: radial-gradient(ellipse 60% 50% at 50% 40%,
+    rgba(255, 193, 146, 0.12) 0%,
+    transparent 70%);
+  animation: bgPulse 6s ease-in-out infinite;
+}

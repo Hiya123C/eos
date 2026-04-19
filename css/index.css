@@ -1,0 +1,152 @@
+/* elements specific to programme.html */
+
+/* vision */
+#vision {
+  padding-block: var(--section-py);
+  text-align: center;
+}
+
+.vision-statement {
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 4vw, 2.6rem);
+  font-weight: 700;
+  color: var(--text-light);
+  line-height: 1.25;
+  max-width: 20ch;
+  margin-inline: auto;
+}
+
+
+/* objective */
+#objectives {
+  padding-block: var(--section-py);
+}
+
+.objectives-divider {
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--card-border), transparent);
+  margin-bottom: var(--gap-lg);
+}
+
+.objectives-cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--gap-lg);
+}
+
+@media (max-width: 760px) {
+  .objectives-cols { grid-template-columns: 1fr; }
+}
+
+.obj-col-title {
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  color: var(--text-accent);
+  margin-bottom: var(--gap-sm);
+}
+
+.obj-col-body {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+
+/* programme structure */
+#programme-index {
+  background: var(--bg-light);
+  padding-block: var(--section-py);
+}
+
+#programme-index .section-heading {
+  color: var(--bg);
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.programme-index-divider {
+  width: 100%;
+  height: 1px;
+  background: rgba(52, 52, 60, 0.2);
+  margin-bottom: var(--gap-lg);
+}
+
+.programme-entry {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: var(--gap-lg);
+  padding-block: var(--gap-lg);
+  border-bottom: 1px solid rgba(52, 52, 60, 0.12);
+}
+
+.programme-entry:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.programme-entry-title {
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  color: var(--bg);
+  padding-top: 0.1rem;
+}
+
+.programme-entry-body {
+  font-size: 0.88rem;
+  color: rgba(52, 52, 60, 0.72);
+  line-height: 1.8;
+}
+
+@media (max-width: 640px) {
+  .programme-entry {
+    grid-template-columns: 1fr;
+    gap: var(--gap-sm);
+  }
+}
+
+
+/* about our team */
+#team {
+  padding-block: var(--section-py);
+  overflow: hidden;
+}
+
+.team-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--gap-lg);
+  align-items: center;
+}
+
+.team-deco {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 280px;
+}
+
+.team-deco svg {
+  width: 100%;
+  max-width: 340px;
+  opacity: 0.3;
+}
+
+.team-content {
+  text-align: right;
+}
+
+.team-body {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.8;
+  max-width: 34ch;
+  margin-left: auto;
+}
+
+@media (max-width: 680px) {
+  .team-inner    { grid-template-columns: 1fr; }
+  .team-content  { text-align: left; }
+  .team-body     { margin-left: 0; }
+  .team-deco     { min-height: 160px; }
+}

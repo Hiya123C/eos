@@ -13,6 +13,7 @@
 
   --font-display:  'Theroce', 'Georgia', sans-serif;
   --font-heading:  'Opificio', 'Courier New', monospace;
+  --font-programme:  'Designer', 'Courier New', monospace;
 
   --section-px:    clamp(1.5rem, 5vw, 6rem);
   --section-py:    clamp(3rem, 8vw, 7rem);
@@ -25,7 +26,7 @@
   --transition-med:  0.4s var(--ease-out-expo);
 
   --radius-sm:     6px;
-  --radius-md:     14px;
+  --radius-md:     12px;
   --radius-pill:   999px;
 }
 
@@ -49,6 +50,14 @@
   font-family: 'Theroce';
   src: url('../fonts/Theroce.otf') format('opentype');
   font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Designer';
+  src: url('../fonts/Designer.otf') format('opentype');
+  font-weight: 700;
   font-display: swap;
   font-style: normal;
 }

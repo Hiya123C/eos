@@ -154,4 +154,24 @@
   .details-cta-grid { grid-template-columns: 1fr; }
 }
 
+.programme-header-title{
+  font-family: var(--font-programme);
+  font-size: clamp(2rem, 8vw, 5.5rem);
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--text-accent);
+  letter-spacing: -0.01em;
+  margin-bottom: 0.3em;
+}
+
+.programme-logo{
+  width: clamp(10rem, 30vw, 8rem);
+  height: auto;
+  margin-bottom:6vh;
+}
+
+#programme-section-heading{
+  font-family: var(--font-programme); 
+}
+
 

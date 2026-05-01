@@ -7,6 +7,8 @@
 }
 
 #header {
+  position: relative;
+
   min-height: 100svh;
   display: flex;
   flex-direction: column;
@@ -15,7 +17,6 @@
   text-align: center;
   padding-top: 5rem;
   padding-inline: var(--section-px);
-  position: relative;
   overflow: hidden;
 }
 
@@ -48,12 +49,11 @@
 
 .header-subtitle {
   font-family: var(--font-heading);
-  font-weight: bold;
-  font-size: clamp(0.85rem, 2vw, 1rem);
-  color: var(--text-accent);
-  letter-spacing: 0.12rem;
-  margin-bottom: var(--gap-md);
-
+  font-weight: 700;
+  font-size: clamp(1.6rem, 4vw, 2rem);
+  color: var(--text-light);
+  letter-spacing: 0.1rem;
+  margin-bottom: 0.3em;
 }
 
 .header-body {
@@ -77,8 +77,39 @@
 }
 
 .header-logo {
-  width: 50vw;
+  width: 500px;
   height: auto;
   margin-bottom: var(--gap-md);
 }
 
+
+.code-blob {
+  width: 400px;
+  height: auto;
+  position: absolute;
+}
+
+.code-blob.config {
+  top: 40%;
+  left: 5%;
+}
+.code-blob.hello-world {
+  bottom: 23%;
+  right: 10%;
+}
+.code-blob.left-data {
+  top: 15%;
+  left: 20%;
+}
+.code-blob.let-func {
+  top: 50%;
+  right: 3%;
+}
+.code-blob.response-200-ok {
+  bottom: 5%;
+  left: 30%;
+}
+.code-blob.return-true {
+  top: 35%;
+  right: 20%;
+}

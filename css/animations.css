@@ -1,3 +1,4 @@
+/* reveal animations */
 .js-ready [data-reveal] {
   opacity: 0;
   transform: translateY(28px);
@@ -65,3 +66,5 @@
     transparent 70%);
   animation: bgPulse 6s ease-in-out infinite;
 }
+
+/* fluted glass */

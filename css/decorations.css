@@ -1,6 +1,7 @@
 .deco {
   position: absolute;
   height: auto;
+  z-index: -1;
 }
 
 /* code blobcs, header */

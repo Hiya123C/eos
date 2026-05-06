@@ -12,7 +12,7 @@
   --card-border:   rgba(255, 193, 146, 0.25);
 
   --font-display:  'Theroce', 'Georgia', sans-serif;
-  --font-heading:  'Opificio', 'Courier New', monospace;
+  --font-heading:  'Opificio', 'Courier New', sans-serif;
   --font-programme:  'Designer', 'Courier New', monospace;
 
   --section-px:    clamp(1.5rem, 5vw, 6rem);
@@ -31,15 +31,7 @@
 }
 
 @font-face {
-  font-family: 'Opicifio';
-  src: url('../fonts/Opificio-Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-display: swap;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Opicifio';
+  font-family: 'Opificio';
   src: url('../fonts/Opificio-Bold.ttf') format('truetype');
   font-weight: 700;
   font-display: swap;

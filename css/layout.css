@@ -75,9 +75,10 @@ body {
 
 
 footer {
-  padding-block: var(--gap-lg);
+  padding-block: var(--gap-md);
   text-align: center;
   border-top: 1px solid var(--card-border);
-  font-size: 0.8rem;
+  font-size: 1rem;
   color: var(--text-muted);
+  font-family: var(--font-heading);
 }

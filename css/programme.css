@@ -158,4 +158,68 @@
   font-family: var(--font-programme); 
 }
 
+/* participant perks */
+
+#participant-perks {
+  padding-top: 0;
+  padding-bottom: var(--section-py);
+}
+
+.perks-card {
+  position: relative;
+
+  overflow: hidden;
+
+  border-radius: 32px;
+
+  padding: 3rem;
+
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(255, 140, 140, 0.18),
+      transparent 45%
+    ),
+    linear-gradient(
+      135deg,
+      rgba(255,255,255,0.06),
+      rgba(255,255,255,0.03)
+    );
+
+  border: 1px solid rgba(255,255,255,0.1);
+
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+
+.perks-small-text {
+  margin-bottom: 1.5rem;
+}
+
+.perks-heading {
+  width: min(560px, 100%);
+  height: auto;
+  position: relative;
+  z-index: 2;
+}
+
+
+@media (max-width: 760px) {
+
+  .perks-card {
+    padding: 2rem;
+  }
+
+  .perks-small-text {
+    font-size: 1rem;
+  }
+
+  .perks-star-left {
+    width: 80px;
+  }
+
+  .perks-trail-right {
+    width: 160px;
+  }
+}
 

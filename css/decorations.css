@@ -69,6 +69,7 @@
   bottom: 2%;
   left: 10%;
   width: 230px;
+  aspect-ratio: 1;
 }
 
 .star-trail-1 {
@@ -194,4 +195,40 @@
   bottom: 2%;
   right: 7%;
   width: 230px;
+}
+
+
+/* responsiveness! */
+@media (max-width: 1024px) {
+  .code-blob { width: 260px; }
+ 
+  .star-1, .star-5, .star-9  { width: 180px; }
+  .star-2, .star-6, .star-10 { width: 160px; }
+  .star-3, .star-7 { width: 140px; }
+  .star-4, .star-8 { width: 170px; }
+  .star-trail-1, .star-trail-4 { width: 55px;  }
+  .star-trail-2, .star-trail-5 { width: 90px;  }
+  .star-trail-3, .star-trail-6 { width: 110px; }
+  .swirl { width: 500px; }
+}
+ 
+@media (max-width: 680px) {
+  /* hidden */
+  .code-blob { display: none; }
+ 
+  .star-trail-1, .star-trail-2, .star-trail-3,
+  .star-trail-4, .star-trail-5, .star-trail-6 { display: none; }
+ 
+  /* one per section */
+  .star-1  { width: 110px; top: 2%; right: 2%; }
+  .star-2  { width: 100px; bottom: 1%; left: 3%; }
+  .star-3  { width: 100px; }
+  .star-4  { width: 110px; left: 5%;}
+  .star-5  { width: 110px; }
+  .star-6  { display: none; }
+  .star-7  { width: 100px; }
+  .star-8  { width: 100px; }
+  .star-9  { width: 110px; }
+  .star-10 { width: 100px; }
+  .swirl   { width: 280px; }
 }

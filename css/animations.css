@@ -26,29 +26,29 @@
   animation: headerFadeUp 0.9s var(--ease-out-expo) 0.1s both;
 }
 
-.header-title span:nth-child(1) {
+.header-subtitle span:nth-child(1) {
   animation: headerFadeUp 0.9s var(--ease-out-expo) 0.25s both;
 }
 
-.header-title span:nth-child(2) {
+.header-subtitle span:nth-child(2) {
   animation: headerFadeUp 0.9s var(--ease-out-expo) 0.4s both;
 }
 
-.header-subtitle {
+.header-body {
   animation: headerFadeUp 0.9s var(--ease-out-expo) 0.5s both;
 }
 
-.header-body {
+.header-cta {
   animation: headerFadeUp 0.9s var(--ease-out-expo) 0.6s both;
 }
 
-.header-cta {
+#navbar {
   animation: headerFadeUp 0.9s var(--ease-out-expo) 0.72s both;
 }
 
-#navbar {
+/* #navbar {
   animation: headerFadeUp 0.8s var(--ease-out-expo) 0.05s both;
-}
+} */
 
 
 @keyframes bgPulse {

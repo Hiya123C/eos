@@ -29,7 +29,7 @@
 
 .timeline-row {
   display: grid;
-  grid-template-columns: clamp(40px, 24vw, 80px) 1fr;
+  grid-template-columns: clamp(40px, 16vw, 140px) 1fr;
   gap: var(--gap-md);
   align-items: start;
 }
@@ -39,6 +39,7 @@
   font-weight: bold;
   font-size: 1rem;
   color: var(--text-accent);
+  padding: 0.1rem 0;
 }
 
 .timeline-sublabel {
@@ -56,7 +57,7 @@
 
 .detail-row {
   display: grid;
-  grid-template-columns: clamp(40px, 24vw, 80px) 1fr;
+  grid-template-columns: clamp(40px, 40vw, 100px) 1fr;
   gap: var(--gap-md);
   align-items: center;
 }
@@ -170,10 +171,9 @@
 }
 
 .perks-img {
-  width: 1000px;
+  width: clamp(100px, 50vw, 500px);
   height: auto;
 }
-
 
 @media (max-width: 680px) {
 
@@ -204,6 +204,12 @@
   .details-cta-grid { 
     display: flex;
     flex-direction: column;
+  }
+  .detail-row {
+    grid-template-columns: clamp(40px, 24vw, 90px) 1fr;
+  }
+  .timeline-row {
+    grid-template-columns: clamp(40px, 24vw, 90px) 1fr;
   }
 
 }

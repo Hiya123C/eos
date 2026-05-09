@@ -4,6 +4,11 @@
   z-index: -1;
 }
 
+.deco img {
+  width: 100%;
+  height: auto;
+}
+
 /* code blobcs, header */
 .code-blob {
   width: 400px;
@@ -88,7 +93,7 @@
 .star-3 {
   bottom: 1%;
   right: 15%;
-  width: 200px;
+  width: 100px;
 }
 
 .star-trail-3 {
@@ -204,7 +209,7 @@
  
   .star-1, .star-5, .star-9  { width: 180px; }
   .star-2, .star-6, .star-10 { width: 150px; }
-  .star-3 { width: 140px; }
+  .star-3 { width: 100px; top:90% }
   .star-4{ width: 170px; }
   .star-trail-1, .star-trail-4 { width: 55px;  }
   .star-trail-2, .star-trail-5 { width: 90px;  }
@@ -225,7 +230,7 @@
   .star-1  { width: 110px; top: 10%; right: 2%; }
   .star-2  { width: 100px; bottom: 1%; left: 3%; }
   .star-3  { display: none;}
-  .star-4  { width: 110px; left: 5%;}
+  .star-4  { display: none;}
   .star-5  { width: 110px; top:15%}
   .star-6  { display: none; }
   .star-7  { width: 100px; top:85%}

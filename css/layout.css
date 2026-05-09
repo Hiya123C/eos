@@ -15,7 +15,8 @@ body {
 
 .section {
   position: relative;
-  padding-block: var(--section-py);
+  padding-top: var(--section-py);
+  padding-bottom: var(--section-py);
 }
 
 #navbar {
@@ -30,7 +31,6 @@ body {
   background: linear-gradient(135deg, var(--nav-from), var(--nav-to));
   border: 1px solid rgba(255, 193, 146, 0.15);
   backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
   box-shadow: 0 4px 32px rgba(0,0,0,0.4);
   transition: box-shadow var(--transition-med);
 
@@ -81,4 +81,69 @@ footer {
   font-size: 1rem;
   color: var(--text-muted);
   font-family: var(--font-heading);
+}
+
+@media (max-width: 680px) {
+ .container { padding:  1.5rem 10vw; }
+}
+
+.nav-toggle {
+  display: none;
+  background: transparent;
+  border: none;
+  color: var(--text-light);
+  cursor: pointer;
+  padding: 0;
+}
+
+.nav-toggle .material-symbols-outlined {
+  font-size: 2rem;
+}
+
+/* MOBILE NAV */
+@media (max-width: 680px) {
+
+  #navbar {
+    width: 100%;
+    height: auto;
+    padding: 0.9rem 1rem;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: 0px;
+    margin-top: 0px;
+    top:0;
+
+
+  }
+
+  .nav-toggle {
+    display: flex;
+    position: absolute;
+    right: 2rem;
+    top: 0.75rem;
+    width: 20px;
+  }
+
+  .nav-logo {
+    height: 24px;
+  }
+
+  .nav-links {
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    padding-top: 0.5rem;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links a {
+    font-size: 1rem;
+    display: block;
+    width: 100%;
+  }
 }

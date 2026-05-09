@@ -173,7 +173,7 @@
 .star-8 {
   bottom: 0%;
   right: 10%;
-  width: 230px;
+  width: 100px;
 }
 
 
@@ -203,13 +203,15 @@
   .code-blob { width: 260px; }
  
   .star-1, .star-5, .star-9  { width: 180px; }
-  .star-2, .star-6, .star-10 { width: 160px; }
-  .star-3, .star-7 { width: 140px; }
-  .star-4, .star-8 { width: 170px; }
+  .star-2, .star-6, .star-10 { width: 150px; }
+  .star-3 { width: 140px; }
+  .star-4{ width: 170px; }
   .star-trail-1, .star-trail-4 { width: 55px;  }
   .star-trail-2, .star-trail-5 { width: 90px;  }
   .star-trail-3, .star-trail-6 { width: 110px; }
   .swirl { width: 500px; }
+  .star-7  { width: 100px; top: 80%}
+  .star-8 {top: 70%; width: 120px;}
 }
  
 @media (max-width: 680px) {
@@ -220,15 +222,16 @@
   .star-trail-4, .star-trail-5, .star-trail-6 { display: none; }
  
   /* one per section */
-  .star-1  { width: 110px; top: 2%; right: 2%; }
+  .star-1  { width: 110px; top: 10%; right: 2%; }
   .star-2  { width: 100px; bottom: 1%; left: 3%; }
-  .star-3  { width: 100px; }
+  .star-3  { width: 100px; top: 80%}
   .star-4  { width: 110px; left: 5%;}
-  .star-5  { width: 110px; }
+  .star-5  { width: 110px; top:15%}
   .star-6  { display: none; }
-  .star-7  { width: 100px; }
-  .star-8  { width: 100px; }
-  .star-9  { width: 110px; }
-  .star-10 { width: 100px; }
+  .star-7  { width: 100px; top:85%}
+  .star-8  { display: none;}
+  .star-9  { width: 110px; display: none;}
+  .star-10 { width: 100px; top:85%}
   .swirl   { width: 280px; }
 }
+

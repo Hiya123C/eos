@@ -56,7 +56,7 @@
 
 .detail-row {
   display: grid;
-  grid-template-columns: 130px 1fr;
+  grid-template-columns: 110px 1fr;
   gap: var(--gap-md);
   align-items: center;
 }
@@ -139,23 +139,23 @@
 }
 
 .programme-header-title{
-  font-family: var(--font-programme);
-  font-size: clamp(2rem, 8vw, 5.5rem);
-  font-weight: 700;
-  line-height: 1.2;
-  color: var(--text-accent);
-  letter-spacing: -0.01em;
-  margin-bottom: 0.3em;
+  display: block;
+  width: clamp(320px, 60vw, 1200px);
+  max-width: 1200px;
+  margin-bottom: var(--gap-md);
+  align-self: center;
+  justify-self: center;
 }
 
 .programme-logo{
-  width: clamp(10rem, 30vw, 8rem);
+  width: clamp(4rem, 14vw, 6rem);
   height: auto;
-  margin-bottom:6vh;
+  margin-bottom: var(--gap-md);
 }
 
 #programme-section-heading{
   font-family: var(--font-programme); 
+  width: clamp(100px, 40vw, 1000px);
 }
 
 /* participant perks */
@@ -165,32 +165,7 @@
   padding-bottom: var(--section-py);
 }
 
-.perks-card {
-  position: relative;
 
-  overflow: hidden;
-
-  border-radius: 32px;
-
-  padding: 3rem;
-
-  background:
-    radial-gradient(
-      circle at top left,
-      rgba(255, 140, 140, 0.18),
-      transparent 45%
-    ),
-    linear-gradient(
-      135deg,
-      rgba(255,255,255,0.06),
-      rgba(255,255,255,0.03)
-    );
-
-  border: 1px solid rgba(255,255,255,0.1);
-
-  backdrop-filter: blur(18px);
-  -webkit-backdrop-filter: blur(18px);
-}
 
 .perks-small-text {
   margin-bottom: 1.5rem;
@@ -204,11 +179,8 @@
 }
 
 
-@media (max-width: 760px) {
+@media (max-width: 680px) {
 
-  .perks-card {
-    padding: 2rem;
-  }
 
   .perks-small-text {
     font-size: 1rem;
@@ -221,5 +193,11 @@
   .perks-trail-right {
     width: 160px;
   }
-}
+  .perks-heading {
+    width: clamp(320px, 90vw, 1200px);
+  }
+  .programme-header-title{
+    width: clamp(320px, 90vw, 1200px)
+  }
 
+}

@@ -90,7 +90,7 @@
 }
 
 .programme-entry-body {
-  font-size: 1.05rem;
+  font-size: 1rem;
   color: var(--bg);
   line-height: 1.8;
 }
@@ -109,11 +109,12 @@
 }
 
 .team-body {
-  font-size: 1.25rem;
+  font-size: 1rem;
   color: var(--text-muted);
   line-height: 1.8;
   max-width: 40ch;
   margin-left: auto;
+  text-align: right;
 }
 
 #team .container {
@@ -126,11 +127,16 @@
   max-width: 50%;
 }
 
+#about-team{
+  text-align: right;
+}
+
 @media (max-width: 680px) {
   .team-inner    { grid-template-columns: 1fr; }
   .team-content  { text-align: left; }
   .team-body     { margin-left: 0; }
   .team-deco     { min-height: 160px; }
+  .container { padding:  1.5rem 10vw; }
 }
 
 /* sponsors */
@@ -147,26 +153,14 @@
 }
 
 .sponsor-card {
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-
-  border-radius: 28px;
-
   padding: 1.5rem 1rem;
 
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
   text-align: center;
 
-  backdrop-filter: blur(18px);
-  -webkit-backdrop-filter: blur(18px);
-
-  transition:
-    transform 0.3s ease,
-    border-color 0.3s ease;
 }
 
 

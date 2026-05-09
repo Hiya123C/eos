@@ -20,4 +20,11 @@ document.addEventListener('DOMContentLoaded', function () {
   document.querySelectorAll('[data-reveal]').forEach(function (el) {
     observer.observe(el);
   });
+
+  const navToggle = document.querySelector(".nav-toggle");
+  const navLinks = document.querySelector(".nav-links");
+
+  navToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
 });

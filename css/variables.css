@@ -16,7 +16,7 @@
   --font-programme:  'Designer', 'Courier New', monospace;
 
   --section-px:    clamp(1.5rem, 5vw, 6rem);
-  --section-py:    clamp(4rem, 8vw, 6rem);
+  --section-py:    clamp(3rem, 8vw, 6rem);
   --gap-sm:        0.75rem;
   --gap-md:        1.5rem;
   --gap-lg:        3rem;

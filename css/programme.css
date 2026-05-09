@@ -149,11 +149,6 @@
   margin-bottom: var(--gap-md);
 }
 
-#programme-section-heading{
-  font-family: var(--font-programme); 
-  width: clamp(100px, 40vw, 1000px);
-}
-
 /* participant perks */
 
 #participant-perks {
@@ -172,6 +167,11 @@
   height: auto;
   position: relative;
   z-index: 2;
+}
+
+.perks-img {
+  width: 1000px;
+  height: auto;
 }
 
 

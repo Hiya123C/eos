@@ -257,18 +257,10 @@
 
       <div class="card sponsor-card" data-reveal>
         <img src="assets/sponsor/jane_street.png" alt="Jane Street Logo" class="sponsor-logo">
-
-        <p class="sponsor-description">
-          Jane Street is a quantitative trading firm and liquidity provider with a unique focus on technology and collaborative problem solving. 
-        </p>
       </div>
 
       <div class="card sponsor-card" data-reveal>
         <img src="assets/sponsor/csit.jpg" alt="CSIT Logo" class="sponsor-logo">
-
-        <p class="sponsor-description">
-          CSIT is a technical agency in the Ministry of Defence that harnesses cutting-edge digital technologies to provide advanced cybersecurity and secure digital solutions for Singapore’s  defence and public sector. 
-        </p>
       </div>
 
     </div>
@@ -276,74 +268,11 @@
 </section>
   <footer>
     <div class="container">
-      <p>© EOS Initiative <b>2026</b></p>
+      <p>© Eos Initiative 2026</p>
     </div>
   </footer>
 
   <script src="js/main.js"></script>
-  <script type="module">
-
-function applyFlutedGlass(el) {
-
-  if (!el || el.__init) return;
-  el.__init = true;
-
-  const width = el.offsetWidth;
-  if (!width) return;
-
-  const segments = Math.max(4, Math.round(width / 10));
-
-  el.setAttribute("tlg-fluted-glass-canvas", "");
-  el.setAttribute("tlg-fluted-glass-mode", "scroll");
-  el.setAttribute("tlg-fluted-glass-motion", "2.5");
-  el.setAttribute("tlg-fluted-glass-overlay", "1");
-  el.setAttribute("tlg-fluted-glass-segments", segments);
-}
-
-function initExisting() {
-  document.querySelectorAll(".auto-glass").forEach(applyFlutedGlass);
-}
-
-const observer = new MutationObserver((mutations) => {
-
-  for (const m of mutations) {
-    for (const node of m.addedNodes) {
-
-      if (node.nodeType !== 1) continue;
-
-      if (node.classList?.contains("auto-glass")) {
-        applyFlutedGlass(node);
-      }
-
-      node.querySelectorAll?.(".auto-glass").forEach(applyFlutedGlass);
-    }
-  }
-});
-
-window.addEventListener("load", () => {
-
-  initExisting();
-
-  observer.observe(document.body, {
-    childList: true,
-    subtree: true
-  });
-});
-
-window.addEventListener("resize", () => {
-
-  document.querySelectorAll(".glass-container").forEach((el) => {
-
-    const width = el.offsetWidth;
-    if (!width) return;
-
-    const segments = Math.max(4, Math.round(width / 10));
-
-    el.setAttribute("tlg-fluted-glass-segments", segments);
-  });
-});
-
-</script>
 
 </body>
 </html>

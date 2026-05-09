@@ -172,11 +172,6 @@
   margin-bottom: 1.5rem;
 }
 
-.sponsor-description {
-  color: var(--text-muted);
-  line-height: 1.7;
-  max-width: 40ch;
-}
 
 @media (max-width: 760px) {
   .sponsors-grid {

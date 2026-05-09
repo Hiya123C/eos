@@ -224,7 +224,7 @@
   /* one per section */
   .star-1  { width: 110px; top: 10%; right: 2%; }
   .star-2  { width: 100px; bottom: 1%; left: 3%; }
-  .star-3  { width: 100px; top: 80%}
+  .star-3  { display: none;}
   .star-4  { width: 110px; left: 5%;}
   .star-5  { width: 110px; top:15%}
   .star-6  { display: none; }

@@ -157,8 +157,6 @@
   padding-bottom: var(--section-py);
 }
 
-
-
 .perks-small-text {
   margin-bottom: 1.5rem;
 }
@@ -173,6 +171,46 @@
 .perks-img {
   width: clamp(100px, 50vw, 500px);
   height: auto;
+}
+
+.perks-layout {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: var(--gap-lg);
+  align-items: center;
+}
+
+.perks-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.merch-display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.merch-img {
+  width: clamp(180px, 28vw, 340px);
+  height: auto;
+  object-fit: contain;
+}
+
+/* mobile */
+@media (max-width: 680px) {
+  .perks-layout {
+    grid-template-columns: 1fr;
+    text-align: left;
+  }
+
+  .merch-display {
+    margin-top: 1rem;
+  }
+
+  .merch-img {
+    width: min(280px, 80vw);
+  }
 }
 
 @media (max-width: 680px) {

@@ -1,3 +1,3 @@
 User-agent: *
-Disallow: /wp-admin/
+Disallow: 
 Sitemap: https://eos-initiative.com/sitemap.xml

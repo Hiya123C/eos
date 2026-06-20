@@ -251,3 +251,12 @@
   }
 
 }
+
+
+.header-cta{
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  flex-direction: column;
+  gap: var(--gap-sm);
+}

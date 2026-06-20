@@ -46,17 +46,17 @@
   border: 1px solid var(--card-border);
   border-radius: var(--radius-pill);
   padding: 0.3rem 0.9rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.8rem;
   letter-spacing: 0.08em;
 }
 
 .header-subtitle {
-  font-family: var(--font-programme);
+  font-family: var(--font-display);
   font-weight: 700;
   font-size: clamp(1.7rem, 3vw, 2rem);
   color: var(--text-light);
   letter-spacing: 0.1rem;
-  margin-bottom: 0.3em;
+  margin-bottom: 1.6rem;
 }
 
 .header-body {

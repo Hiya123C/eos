@@ -92,8 +92,39 @@
   color: var(--text-muted);
   line-height: 1.65;
 }
+
+
+#keychain {
+  /* padding-block: var(--section-py); */
+  
+}
+
+.keychain-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: stretch;
+  /* background: var(--bg-light); */
+
+  background: var(--bg-light);
+  /* border: 3px solid var(--card-border); */
+  border-radius: var(--radius-md);
+  padding: var(--gap-lg);
+  transition: border-color var(--transition-med),
+              box-shadow var(--transition-med);
+}
+
+.keychain-img {
+  width: clamp(180px, 28vw, 340px);
+  height: auto;
+}
+
+
 #info-strip {
   padding-block: var(--section-py);
+}
+
+#info-strip-summit {
+  padding-block: 20px;
 }
 
 .info-strip-grid {
@@ -126,6 +157,10 @@
 
 #details-cta {
   padding-block: var(--section-py);
+}
+
+#details-summit {
+  padding-block: 30px;
 }
 
 .details-cta-grid {

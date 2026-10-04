@@ -96,22 +96,54 @@
 .keychain-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "img title"
+    "img text";
+  align-items: center;
+  justify-items: center;
+  text-align: center;
   background: var(--bg-light);
   /* border: 3px solid var(--card-border); */
   border-radius: var(--radius-md);
   padding: var(--gap-md);
   transition: border-color var(--transition-med),
               box-shadow var(--transition-med);
-  align-items: center;
-  justify-items: center;
-  text-align: center; 
-
 }
 
-.keychain-img {
-  width: clamp(180px, 35vw, 450px);
-  height: auto;
+.keychain-img-wrap { grid-area: img; }
+.keychain-title    { grid-area: title; align-self: end; }
+.keychain-text     { grid-area: text;  align-self: start; }
 
+.keychain-img {
+  display: block;
+  width: clamp(200px, 35vw, 450px);
+  max-width: 100%;
+  height: auto;
+}
+
+.keychain-title img {
+  display: block;
+  margin-inline: auto;
+  max-width: 100%;
+}
+
+/* Small screens: title on top, text left, keychain right */
+@media (max-width: 700px) {
+  .keychain-grid {
+    grid-template-columns: 1fr auto;
+    grid-template-areas:
+      "title title"
+      "text  img";
+    gap: var(--gap-sm);
+  }
+
+  .keychain-text { text-align: left; }
+  .keychain-text,
+  .keychain-img-wrap { align-self: center; }
+
+  .keychain-img {
+    width: clamp(200px, 30vw, 300px); /* smaller so the text has room */
+  }
 }
 
 
@@ -307,7 +339,7 @@
 }
 
 .cta-img {
-  width: clamp(500px, 60vw, 1200px);
+  width: clamp(500px, 70vw, 1200px);
   height: auto;
   display: block;
   margin-inline: auto;

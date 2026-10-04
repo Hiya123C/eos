@@ -74,7 +74,7 @@
 }
 
 .card-body-black {
-  font-size: 1.2rem;
+  font-size: clamp(1.0rem, 3vw, 1.3rem);
   color: var(--bg);
   line-height: 1.75;
 }

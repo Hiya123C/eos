@@ -20,6 +20,12 @@ body {
   padding-bottom: var(--section-py);
 }
 
+.cta-section {
+  position: relative;
+  padding-top: var(--gap-md);
+  padding-bottom: var(--gap-md);
+}
+
 #navbar {
   position: fixed;
   top: 1.25rem;

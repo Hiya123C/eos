@@ -259,12 +259,16 @@
 }
 
 .merch-display {
+  background: radial-gradient(circle, var(--bg-light) 10%, rgba(255,255,255,0) 60%);
+  border-radius: var(--radius-md);
+  padding: var(--gap-sm);
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
 .merch-img {
+  display: block;
   width: clamp(180px, 28vw, 340px);
   height: auto;
   object-fit: contain;

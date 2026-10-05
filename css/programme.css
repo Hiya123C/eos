@@ -105,14 +105,14 @@
   background: var(--bg-light);
   /* border: 3px solid var(--card-border); */
   border-radius: var(--radius-md);
-  padding: var(--gap-md);
+  padding: var(--gap-md) var(--gap-lg) var(--gap-md) var(--gap-md);
   transition: border-color var(--transition-med),
               box-shadow var(--transition-med);
 }
 
 .keychain-img-wrap { grid-area: img; }
 .keychain-title    { grid-area: title; align-self: end; }
-.keychain-text     { grid-area: text;  align-self: start; }
+.keychain-text     { grid-area: text;  align-self: start; text-align: right; }
 
 .keychain-img {
   display: block;
@@ -259,7 +259,7 @@
 }
 
 .merch-display {
-  background: radial-gradient(circle, var(--bg-light) 10%, rgba(255,255,255,0) 60%);
+  background: radial-gradient(circle, var(--bg-light) 0%, rgba(255,255,255,0) 60%);
   border-radius: var(--radius-md);
   padding: var(--gap-sm);
   display: flex;

@@ -1,0 +1,48 @@
+.rubric-scroll {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      margin-top: 1.25rem;
+    }
+
+    .rubric-table {
+      width: 100%;
+      min-width: 720px;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+
+    .rubric-table th,
+    .rubric-table td {
+      padding: 0.9rem 1rem;
+      vertical-align: top;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+    }
+
+    .rubric-table thead th {
+      font-weight: 700;
+      white-space: nowrap;
+      border-bottom-width: 2px;
+      color: var(--text-accent, inherit);
+    }
+
+    .rubric-table tbody th {
+      font-weight: 700;
+      width: 11rem;
+      white-space: nowrap;
+    }
+
+    .rubric-table tbody tr:last-child th,
+    .rubric-table tbody tr:last-child td {
+      border-bottom: none;
+    }
+
+    .rubric-note {
+      margin-top: 1rem;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 600px) {
+      .rubric-table tbody th { width: auto; }
+    }
